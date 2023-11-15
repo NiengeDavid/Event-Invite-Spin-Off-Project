@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Invitation || Nienge David</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 50px;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        main {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin: -40px 20px 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        button {
+            background-color: #0078d4;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            border-radius: 50%;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(200vw, 100vh);
+            }
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            header {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            main {
+                margin: -20px 10px 10px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 David's Birthday Bash</h1>
+        <div class="confetti" style="top: 30%; left: 20%;"></div>
+        <div class="confetti" style="top: 10%; left: 50%;"></div>
+        <div class="confetti" style="top: 70%; left: 80%;"></div>
+    </header>
+
+    <main>
+        <p>Date: January 15, 2023</p>
+        <p>Time: 7:00 PM</p>
+        <p>Venue: David's Place</p>
+
+        <p>Join us for a night of fun, laughter, and celebration!</p>
+
+        <button>RSVP</button>
+    </main>
+</body>
+</html>
